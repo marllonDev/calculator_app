@@ -42,9 +42,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 1208.935133727043,
-			"y": 525.8175686684895,
-			"lastActivityTimestamp": 1714088664820,
+			"x": 855.4596088540295,
+			"y": 14.619827484951799,
+			"lastActivityTimestamp": 1714090083271,
 			"meta": {}
 		},
 		{
@@ -55,9 +55,9 @@
 			"typeName": "page"
 		},
 		{
-			"x": 32.04982100016165,
-			"y": -48.815737988458565,
-			"z": 0.91507169819844,
+			"x": 41.24174612643924,
+			"y": 179.5099332572357,
+			"z": 1,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -65,9 +65,7 @@
 		{
 			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:IR2wOzFTASTjgVoG0PbLJ"
-			],
+			"selectedShapeIds": [],
 			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
@@ -88,7 +86,7 @@
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "cross",
+				"type": "default",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -5334,6 +5332,70 @@
 			},
 			"parentId": "shape:HmqDXt7QxQssiKdGCjGv2",
 			"index": "aX",
+			"typeName": "shape"
+		},
+		{
+			"x": 630.0203283420232,
+			"y": -147.12198385183032,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:afZXW5GdEUsFsOGdh1VQz",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 57.69487762451172,
+				"text": "ROW",
+				"font": "draw",
+				"align": "middle",
+				"autoSize": true,
+				"scale": 3.518258049486342
+			},
+			"parentId": "page:page",
+			"index": "a8",
+			"typeName": "shape"
+		},
+		{
+			"x": 722.8207538735608,
+			"y": -52.741271758212264,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:gNyJggd6WZG51VgLRV6OX",
+			"type": "arrow",
+			"parentId": "page:page",
+			"index": "a9",
+			"props": {
+				"dash": "draw",
+				"size": "m",
+				"fill": "none",
+				"color": "black",
+				"labelColor": "black",
+				"bend": 0,
+				"start": {
+					"type": "binding",
+					"boundShapeId": "shape:afZXW5GdEUsFsOGdh1VQz",
+					"normalizedAnchor": {
+						"x": 0.4571776818369788,
+						"y": 0.8282352770414214
+					},
+					"isPrecise": false,
+					"isExact": false
+				},
+				"end": {
+					"type": "point",
+					"x": 10.06939697265625,
+					"y": 93.68489074707031
+				},
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"text": "",
+				"labelPosition": 0.5,
+				"font": "draw"
+			},
 			"typeName": "shape"
 		}
 	]
