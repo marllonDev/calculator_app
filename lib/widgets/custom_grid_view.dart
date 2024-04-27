@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CustomGridView extends StatelessWidget {
-   CustomGridView({super.key});
+  CustomGridView({super.key});
 
-    final List<String> buttons = [
+  final List<String> buttons = [
     '7',
     '8',
     '9',
@@ -44,12 +44,10 @@ class CustomGridView extends StatelessWidget {
                 height: MediaQuery.sizeOf(context).height * 0.23,
                 decoration: BoxDecoration(
                   color: Colors.transparent,
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(50),
-                  ),
+                  shape: BoxShape.circle,
                   border: Border.all(
-                    color: Colors.black,
-                    width: 3,
+                    color: Colors.white,
+                    width: 1.5,
                   ),
                 ),
                 child: Align(
@@ -59,6 +57,7 @@ class CustomGridView extends StatelessWidget {
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
+                      fontSize: 35,
                     ),
                   ),
                 ),
