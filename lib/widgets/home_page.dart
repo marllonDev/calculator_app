@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -40,10 +39,19 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 165, 132, 132),
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text(widget.title), //pegando o nome do titulo
-        backgroundColor: const Color.fromARGB(255, 165, 132, 132),
+        title: Center(
+          child: Text(
+            widget.title, //pegando o nome do titulo
+            style: const TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 30,
+            ),
+          ),
+        ),
+        backgroundColor: Colors.black,
       ),
       body: Padding(
         padding: const EdgeInsets.all(10),
@@ -55,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   width: MediaQuery.sizeOf(context).width * 0.95,
                   height: MediaQuery.sizeOf(context).height * 0.2,
-                  color: Colors.red,
+                  color: Colors.grey[800],
                   child: Align(
                     alignment: Alignment.bottomRight,
                     child: Text(
@@ -84,14 +92,23 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Container(
                         width: MediaQuery.sizeOf(context).width * 0.23,
                         height: MediaQuery.sizeOf(context).height * 0.23,
-                        color: const Color.fromARGB(255, 186, 160, 160),
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          borderRadius: const BorderRadius.all(
+                            Radius.circular(50),
+                          ),
+                          border: Border.all(
+                            color: Colors.black,
+                            width: 3,
+                          ),
+                        ),
                         child: Align(
                           alignment: Alignment.center,
                           child: Text(
                             buttons[index],
                             style: const TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: Colors.black,
+                              color: Colors.white,
                             ),
                           ),
                         ),
@@ -111,7 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Container(
                     width: MediaQuery.sizeOf(context).width,
                     height: MediaQuery.sizeOf(context).height * 0.1,
-                    color: Colors.red,
+                    color: Colors.grey[800],
                     child: const Align(
                       alignment: Alignment.center,
                       child: Text(
