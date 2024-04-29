@@ -1,16 +1,6 @@
 # calculator_app
 
-A new Flutter project.
+Olá pessoal, esse app é uma calculadora básica que fiz usando meus conhecimentos até então. Claro, apesar de ser algo simples, há sempre algo novo para aprender, e dessa vez não foi diferente. Pude aprender mais sobre layout, gerencia de estado e lógica de programação.
 
-## Getting Started
+## Img do App
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
