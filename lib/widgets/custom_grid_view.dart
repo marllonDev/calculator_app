@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:math_expressions/math_expressions.dart';
 
 class CustomGridView extends StatefulWidget {
@@ -11,6 +10,7 @@ class CustomGridView extends StatefulWidget {
 
 class _CustomGridViewState extends State<CustomGridView> {
   final List<String> buttons = [
+    //buttons
     '7',
     '8',
     '9',
@@ -41,7 +41,8 @@ class _CustomGridViewState extends State<CustomGridView> {
               .replaceAll('x', '*')
               .replaceAll(',', '.')); //analisa a expressão matemática
           ContextModel cm = ContextModel(); //contexto padrão
-          result = '${exp.evaluate(EvaluationType.REAL, cm)}'; //resultado com ponto flutuante(REAL)
+          result =
+              '${exp.evaluate(EvaluationType.REAL, cm)}'; //resultado com ponto flutuante(REAL)
         } catch (e) {
           result = 'Error';
         }
@@ -52,7 +53,8 @@ class _CustomGridViewState extends State<CustomGridView> {
     });
   }
 
-  clearButtomC() {//limpa as variaveis
+  clearButtomC() {
+    //limpa as variaveis
     setState(() {
       expression = '';
       result = '';
@@ -68,6 +70,7 @@ class _CustomGridViewState extends State<CustomGridView> {
             Row(
               children: <Widget>[
                 Container(
+                  //display
                   width: MediaQuery.sizeOf(context).width * 0.95,
                   height: MediaQuery.sizeOf(context).height * 0.2,
                   decoration: BoxDecoration(
@@ -78,6 +81,7 @@ class _CustomGridViewState extends State<CustomGridView> {
                     ),
                   ),
                   child: Align(
+                    //texto do resultado
                     alignment: Alignment.center,
                     child: Text(
                       result,
@@ -92,6 +96,7 @@ class _CustomGridViewState extends State<CustomGridView> {
               ],
             ),
             Align(
+              //texto da expression
               alignment: Alignment.topCenter,
               child: Text(
                 expression,
@@ -104,10 +109,10 @@ class _CustomGridViewState extends State<CustomGridView> {
             ),
           ],
         ),
-        const SizedBox(
+        const SizedBox(//dando espaço entre o display e o gridview
           height: 20,
         ),
-        GridView.builder(
+        GridView.builder(//contrução dos botões
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
           itemCount: buttons.length,
@@ -122,7 +127,7 @@ class _CustomGridViewState extends State<CustomGridView> {
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.all(2),
-                  child: Container(
+                  child: Container(//contrução e estilo de cada container qeu será o botão
                     width: MediaQuery.sizeOf(context).width * 0.23,
                     height: MediaQuery.sizeOf(context).height * 0.23,
                     decoration: BoxDecoration(
@@ -133,7 +138,7 @@ class _CustomGridViewState extends State<CustomGridView> {
                         width: 1.5,
                       ),
                     ),
-                    child: Align(
+                    child: Align(//texto dentro do botão
                       alignment: Alignment.center,
                       child: Text(
                         buttons[index],
@@ -150,7 +155,7 @@ class _CustomGridViewState extends State<CustomGridView> {
             );
           },
         ),
-        Padding(
+        Padding(// botão C para limpar o display
           padding: const EdgeInsets.symmetric(vertical: 30),
           child: InkWell(
             onTap: () {
@@ -166,7 +171,7 @@ class _CustomGridViewState extends State<CustomGridView> {
                 ),
                 child: const Align(
                   alignment: Alignment.center,
-                  child: Text(
+                  child: Text(//estilo do botão para limpar o display
                     'C',
                     textAlign: TextAlign.center,
                     style: TextStyle(
