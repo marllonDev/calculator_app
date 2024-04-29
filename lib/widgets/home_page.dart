@@ -1,6 +1,4 @@
-import 'package:calculator_app/widgets/buttom_c.dart';
 import 'package:calculator_app/widgets/custom_grid_view.dart';
-import 'package:calculator_app/widgets/display.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -32,14 +30,14 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         backgroundColor: Colors.black,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(10),
+      body: const Padding(
+        padding: EdgeInsets.all(10),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Display(),
+            //const Display(),
             CustomGridView(),
-            const ButtomC(),
+            //const ButtomC(),
           ],
         ),
       ),
